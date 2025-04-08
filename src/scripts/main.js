@@ -51,6 +51,8 @@ const secondPromise = new Promise((resolve, reject) => {
 
 secondPromise.then(() => {
   showMessage('Second promise was resolved', 'success');
+}).catch(() => {
+  showMessage('Second promise was rejected', 'error');
 });
 
 let rightClicked = false;
